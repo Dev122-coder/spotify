@@ -464,68 +464,69 @@ footer{
   }
 }
 
-
-/* ============================
-   MOBILE (<=480px)
-   ============================ */
-@media (max-width: 480px) {
-
-  /* Hide sidebar on phones */
-  .sidebar {
-    display: none !important;
-  }
-
-  .main {
-    padding: 0.5rem !important;
-    gap: 0 !important;
-  }
-
-  .main-content {
-    width: 100% !important;
-    padding: 0.6rem !important;
-  }
-
-  /* Cards → single column */
+/* stack cards vertically and center on small screens <= 540px */
+@media (max-width: 540px) {
   .cards_container {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 1rem !important;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;      /* center cards horizontally */
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1rem 0;
   }
 
   .card {
-    width: 100% !important;
-    padding: 0.7rem !important;
-    padding-right: 3.5rem !important;
+    width: calc(100% - 2rem) !important; /* full width with side padding */
+    max-width: 420px;                     /* keeps really wide phones pleasant */
+    margin: 0.5rem auto !important;       /* center each card */
+    padding-right: 1rem !important;
+    box-sizing: border-box;
   }
 
-  /* Image clean (not cut weirdly) */
   .card_img {
     width: 100% !important;
-    height: 200px !important;
+    height: auto !important;     /* allow image to scale naturally */
     object-fit: cover !important;
     border-radius: 8px !important;
   }
 
-  /* Play button mobile size */
+  /* keep play button visible and positioned nicely */
   .play-btn {
-    width: 52px !important;
-    height: 52px !important;
-    right: 1rem !important;
+    right: 1.25rem !important;
     bottom: 1rem !important;
+    transform: translateX(0) !important; /* cancel any JS transform if applied earlier */
   }
 
-  /* Hide full bottom music player */
-  .music-player {
-    display: none !important;
+   .cards_container {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.8rem !important;      /* MORE SPACE BETWEEN CARDS */
+    padding: 1rem 0;
   }
 
-  /* No extra player bar */
-  .player {
-    display: none !important;
+  .card {
+    width: calc(100% - 2rem) !important;
+    max-width: 430px;
+    margin: 0 auto !important;
+    padding: 1rem !important;
+    height: 28rem !important;    /* INCREASED CARD HEIGHT */
+    box-sizing: border-box;
   }
 
-  /* Prevent unwanted horizontal scrolling */
-  body, html {
-    overflow-x: hidden !important;
+  .card_img {
+    width: 100% !important;
+    height: 220px !important;    /* slightly taller image */
+    object-fit: cover !important;
+    border-radius: 10px !important;
+  }
+
+  .play-btn {
+    width: 55px !important;
+    height: 55px !important;
+    right: 1.25rem !important;
+    bottom: 1.25rem !important;
+    transform: translateX(0) !important;
   }
 }
