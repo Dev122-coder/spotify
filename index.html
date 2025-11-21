@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Eater&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="./assets/logo.png">
+    <title>Spotify - Web Player: Music for everyone</title>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">
+
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="">Search</a>
+                </div>
+            </div>
+
+
+
+            <div class="library">
+                <div class="options">
+                    <div class="lib-options nav-option">
+                        <img src="assets/library_icon.png" alt="">
+                        <a href="">Your Library</a>
+                    </div>
+
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box_p1">Create your First Playlist</p>
+                        <p class="box_p2">It's easy , we'll help you</p>
+                        <button class="badge">Create Your playlist</button>
+                    </div>
+
+                    <div class="box box2">
+                        <p class="box_p1 box2_p1">Let's find some podcasts to follow</p>
+                        <p class="box_p2 box2_p2">We'll keep you updated on new episodes</p>
+                        <button class="badge b2">Browse podcast</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="main-content">
+            <div class="sticky_nav n1">
+
+                <div class="sticky_nav_icons">
+                    <img src="./assets/backward_icon.png" alt="">
+                    <img src="./assets/forward_icon.png" class="hide" alt="">
+
+                </div>
+
+                <div class="sticky_nav_options">
+                    <button class="badge nav_items hide">Explore Premium</button>
+                    <button class="badge nav_items" style="background-color: rgb(0, 0, 0); color: white;"><i
+                            class="fa-regular fa-circle-down" style="margin-right: 1rem"></i>Install app</button>
+                    <i class="fa-solid fa-user nav_items"></i>
+                </div>
+
+
+
+            </div>
+
+            <h2 style="padding-left: 10px;">Recently Played</h2>
+            <div class="cards_container">
+
+                <div class="card">
+                    <img src="assets/ghi.jpg" style="height: 260px;" class="card_img">
+                    <p class="card_title">Top Ghibli Songs</p>
+                    <p class="card_info">Your daily updates of the most played tracks...</p>
+
+                    <button class="play-btn" data-src="assets/h.mp3">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+
+                </div>
+            </div>
+
+            <h2 style="padding-left: 10px;">Trending now near you</h2>
+            <div class="cards_container">
+                <div class="card">
+                    <img src="assets/card2img.jpeg" class="card_img">
+                    <p class="card_title">Mahiye Jinna Sohna</p>
+                    <p class="card_info"> Darshan Raval </p>
+                    <button class="play-btn" data-src="assets/dar.mp3">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+
+                <div class="card">
+                    <img src="assets/ash.jpg" class="card_img">
+                    <p class="card_title">Tum Hi Ho</p>
+                    <p class="card_info">Arijit Singh</p>
+                    <button class="play-btn" data-src="assets/tum.mp3">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+
+                <div class="card">
+                    <img src="assets/aasa.jfif" class="card_img">
+                    <p class="card_title">Aasa Kooda</p>
+                    <p class="card_info"> Sai Abhyankar ,Sai Smriti</p>
+                    <button class="play-btn" data-src="assets/aasa.mp3">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+
+                <div class="card">
+                    <img src="assets/bargad.jfif" class="card_img">
+                    <p class="card_title">Bargad</p>
+                    <p class="card_info">Surf X Arpit Bala</p>
+                    <button class="play-btn" data-src="assets/suf.mp3">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+
+
+            </div>
+
+            <h2 style="padding-left: 10px;">Top Opening/Ending Anime songs</h2>
+            <div class="cards_container">
+                <div class="card">
+                    <img src="assets/tyy.jpg" style="height: 260px;" class="card_img">
+                    <p class="card_title">Sparkle | Your Name </p>
+                    <p class="card_info">RADWIMPS</p>
+                    <button class="play-btn" data-src="assets/name.mp3">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+
+                <div class="card">
+                    <img src="assets/frr.jpg" style="height: 260px;" class="card_img">
+                    <p class="card_title">Fireworks (打上花火) </p>
+                    <p class="card_info">Kenshi Yonezu (米津 玄師)</p>
+                    <button class="play-btn" data-src="assets/hana.mp3">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+
+                <div class="card">
+                    <img src="assets/blue b.jpg" style="height: 260px;" class="card_img">
+                    <p class="card_title">Blue Bird </p>
+                    <p class="card_info">Ikimono-gakari (いきものがかり)</p>
+                    <button class="play-btn" data-src="assets/n.mp3.mp3">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+
+                <div class="card">
+                    <img src="assets/dd.png" style="height: 260px;" class="card_img">
+                    <p class="card_title">Gurenge" (紅蓮華)</p>
+                    <p class="card_info">Lisa</p>
+                    <button class="play-btn" data-src="assets/lisa.mp3">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+
+                <div class="card">
+                    <img src="assets/nn.jpg" style="height: 260px;" class="card_img">
+                    <p class="card_title"> A Cruel Angel's Thesis</p>
+                    <p class="card_info">Yoko Takahashi</p>
+                    <button class="play-btn" data-src="assets/eva.mp3">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+
+                <div class="card">
+                    <img src="assets/Suzume_no_Tojimari_poster.jpg" style="height: 260px;" class="card_img">
+                    <p class="card_title">Suzume no Tojimari『Suzume』</p>
+                    <p class="card_info">RADWIMPS</p>
+                    <button class="play-btn" data-src="assets/suzu.mp3">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+
+            </div>
+            <h2 style="padding-left: 10px;">Featured charts</h2>
+            <div class="cards_container">
+                <div class="card">
+                    <img src="assets/card1img.jpeg" class="card_img">
+                    <p class="card_title">Top 50 - Global</p>
+                    <p class="card_info">Your daily updates of the most played tracks...</p>
+                    <button class="play-btn" data-src="assets/song1.mp3">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+
+                <div class="card">
+                    <img src="assets/card5img.jpeg" class="card_img">
+                    <p class="card_title">Top Global Songs</p>
+                    <p class="card_info">Your daily updates of the most played tracks...</p>
+                    <button class="play-btn" data-src="assets/song1.mp3">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+
+                <div class="card">
+                    <img src="assets/card6img.jpeg" class="card_img">
+                    <p class="card_title">Top Songs Indian </p>
+                    <p class="card_info">Your daily updates of the most played tracks...</p>
+                    <button class="play-btn" data-src="assets/song1.mp3">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+
+
+
+            </div>
+
+            <footer>
+                <div class="line">
+
+                </div>
+            </footer>
+
+
+
+            <div class="music-player">
+                <div class="album">
+                    <img src="/Homework Assets/album_picture.jpeg" alt="">
+                    <div class="para">
+                        <p style="margin-bottom: 0.5rem;">Daylight</p>
+                        <p style="opacity: 0.3; font-size: 0.8rem;">David kushner</p>
+                    </div>
+                    <div class="im1">
+                        <img src="Homework Assets/album_icon1.png">
+                    </div>
+                    <div class="im2">
+                        <img src="Homework Assets/album_icon2.png" style="height: 2.3rem;">
+                    </div>
+
+                </div>
+
+
+                <div class="player">
+                    <div class="player_control">
+                        <img src="assets/player_icon1.png" class="player_control_icon" alt="">
+                        <img src="assets/player_icon2.png" class="player_control_icon" alt="">
+                        <img src="assets/player_icon3.png" class="player_control_icon" style="opacity: 1; height: 2rem;"
+                            alt="">
+                        <img src="assets/player_icon4.png" class="player_control_icon" alt="">
+                        <img src="assets/player_icon5.png" class="player_control_icon" alt="">
+                    </div>
+                    <div class="playback_bar">
+                        <span class="ft">00:00</span>
+                        <input type="range" class="progress_bar">
+                        <span class="ft">3:33</span>
+
+                    </div>
+
+                </div>
+                <div class="control">
+                    <div class="c_icon">
+                        <img src="Homework Assets/controls_icon1.png">
+                        <img src="Homework Assets/controld_icon2.png">
+                        <img src="Homework Assets/controls_icon3.png" class="small-icon">
+                        <img src="Homework Assets/controls_icon4.png" class="small-icon" style="height: 1.3rem;">
+                        <img src="Homework Assets/controls_icon5.png">
+                    </div>
+
+                    <input type="range" class="control_range" style="margin-top: 0.3rem; width: 10rem;">
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+<script src="script.js"></script>
+<script>
+// ensure the play button never runs off the right edge of the screen
+(function ensurePlayButtonsVisible() {
+  function adjustPlayButtons() {
+    const buttons = document.querySelectorAll('.play-btn');
+    if (!buttons || buttons.length === 0) return;
+
+    buttons.forEach(btn => {
+      // reset any previous transform
+      btn.style.transform = '';
+
+      const rect = btn.getBoundingClientRect();
+      const margin = 8; // px gap from the viewport edge
+      const overflow = rect.right - (window.innerWidth - margin);
+
+      if (overflow > 0) {
+        // shift left by the overflow + a tiny buffer
+        const shift = overflow + 6;
+        btn.style.transform = `translateX(-${shift}px)`;
+      } else {
+        btn.style.transform = ''; // no overflow — clear transform
+      }
+    });
+  }
+
+  // run after DOM ready and when layout changes
+  window.addEventListener('load', adjustPlayButtons, { passive: true });
+  window.addEventListener('resize', adjustPlayButtons, { passive: true });
+  // If you use dynamic content insertion, call adjustPlayButtons() after adding cards.
+})();
+
+
+</script>
+</body>
+
+</html>
